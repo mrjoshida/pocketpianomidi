@@ -22,7 +22,7 @@ NoteButtons noteButtons[] = {
   //  mux2.pin)(0), mux2.pin)(1), mux2.pin)(2), mux2.pin)(3),
   //  mux2.pin)(4), mux2.pin)(5), mux2.pin)(6), mux2.pin)(7)
   //},
-  copyAs<Button>(cat(mux0.pins(), mux1.pins(), mux2.pins())),
+  copyAs<Button>(cat(mux0.pins(), cat(mux1.pins(), mux2.pins()))),
   {60, CHANNEL_1},              // base address
   {1, 0},                       // address increment
 };
